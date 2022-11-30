@@ -25,7 +25,6 @@ ORBSLAM2详解：https://blog.csdn.net/afucc111/article/details/126237586?spm=10
     
 ##### 2022.11.25  
 #### 结果：
-
     - 1、激光雷达与相机标定工作：
     使用了香港大学开源框架lidar_camera_calib，但是使用过程中发现bug，使用gdb逐行调试，发现是pcl库中的点云分割器中的一个函数出现内存溢出的错误，猜测是由于pcl、vtk版本等问题。（已解决）
     遂使用了点对点的标定方法，完成标定。
