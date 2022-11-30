@@ -29,13 +29,13 @@ ORBSLAM2详解：https://blog.csdn.net/afucc111/article/details/126237586?spm=10
     遂使用了点对点的标定方法，完成标定。
     - 2、r3live数据集复现完成 
     - 3、fastlio复现完成
------
+#### 效果：  
+
     <div align=center>
     <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-1.png">
     <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-2.png">
       <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-3.png">
     </div>  
-    
     视频：https://www.bilibili.com/video/BV1pP411u7xB/?spm_id_from=333.999.0.0&vd_source=6dd8e0feb6b7773e09908fe27ca756e3
     
     
