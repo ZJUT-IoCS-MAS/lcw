@@ -22,3 +22,28 @@ ORBSLAM2详解：https://blog.csdn.net/afucc111/article/details/126237586?spm=10
     原先是基于轮式里程计+octomap工具完成建图、考虑是否可以使用r3live输出的里程计信息替代轮式里程计，优化建图结果。  
     （这一步主要是增强了毫米波雷达建图的鲁棒性，因为原轮式里程计只可以在地面上使用）
     注：第2步亦可不做，因为现有设备是基于turtlebot2的，所以使用轮式里程计也可以。
+    
+##### 2022.11.25  
+#### 结果：  
+
+    1、激光雷达与相机标定工作：
+    使用了香港大学开源框架lidar_camera_calib，但是使用过程中发现bug，使用gdb逐行调试，发现是pcl库中的点云分割器中的一个函数出现内存溢出的错误，猜测是由于pcl、vtk版本等问题。（已解决）
+    遂使用了点对点的标定方法，完成标定。
+    2、r3live数据集复现完成 
+    3、fastlio复现完成
+    <div align=center>
+    <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-1.png">
+    <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-2.png">
+      <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-3.png">
+    </div>
+    视频：https://www.bilibili.com/video/BV1pP411u7xB/?spm_id_from=333.999.0.0&vd_source=6dd8e0feb6b7773e09908fe27ca756e3
+    
+    
+#### 计划：  
+
+    1、复现r3live（由于设备被移动需要重新标定）
+    2、分析激光雷达点云，查找点云空洞补全方法。
+    暂定方案：
+          1、激光雷达点云取‘非’处理
+          2、icp匹配毫米波雷达点云与上述激光雷达处理后的点云
+    3、毕业论文
