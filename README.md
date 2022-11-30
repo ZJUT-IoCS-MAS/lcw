@@ -30,12 +30,14 @@ ORBSLAM2详解：https://blog.csdn.net/afucc111/article/details/126237586?spm=10
     使用了香港大学开源框架lidar_camera_calib，但是使用过程中发现bug，使用gdb逐行调试，发现是pcl库中的点云分割器中的一个函数出现内存溢出的错误，猜测是由于pcl、vtk版本等问题。（已解决）
     遂使用了点对点的标定方法，完成标定。
     2、r3live数据集复现完成 
-    3、fastlio复现完成
+    3、fastlio复现完成  
+    
     <div align=center>
     <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-1.png">
     <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-2.png">
       <img width="500" alt="image" src="https://github.com/ZJUT-IoCS-MAS/lcw/blob/bd545ec6dfcedd815ab69000f623fc647731d2cf/image/fastlio-3.png">
-    </div>
+    </div>  
+    
     视频：https://www.bilibili.com/video/BV1pP411u7xB/?spm_id_from=333.999.0.0&vd_source=6dd8e0feb6b7773e09908fe27ca756e3
     
     
